@@ -11,7 +11,7 @@
 <body>
     <p>Para mais informações e descrição dos exemplos, leia o código</p>
     <h1>ONMOUSEOVER</h1>
-    <img onmouseover="ImgMax(this)" onmouseout="ImgNor(this)" border="0" src="https://66.media.tumblr.com/3b8022f11de5e422639f1f8a357dc87b/dee16849832871e8-f8/s250x400/0f88a8bc761881768b3c8afa1801a72eeeb3798a.gif" alt="hamster" width="340" height="400">
+    <img onmouseover="ImgMax(this)" onmouseout="ImgNor(this)" border="0" src="https://i.pinimg.com/originals/9e/c0/02/9ec0026c5a03de6cf7d2bdd91a1b305d.gif" alt="hamster" width="340" height="400">
     <br>
     <p>Hamster fofo em uma colher, coloque o cursor sob o gif </p>
 
@@ -37,34 +37,30 @@
 
 //ONMOUSEOVER
 
-        /* aqui usei o js para quando o cursor passar pelo gif, seu
-        tamanho aumentar, pra isso usei o function*/
         function ImgMax(i){
             i.style.height="570px";
             i.style.width="510px";
         }
-        /* aqui usei o js para quando o cursor estiver fora do gif, seu
-        tamanho continuar o mesmo, pra isso usei o function*/
+       //muda de tamanho
         function ImgNor(i){
             i.style.height="400px";
             i.style.width="340px";
         }
         //ONFOCUS
+        //muda de cor quando clicado
 
         function color_inp(x){
-            x.style.background='blue'
+            x.style.background='red'
         }
-         /*  Aqui eu utilizei o js para que a cor do input mudasse ao ser clicado  */
 
         //ONCHANGE
 
         function FucaoCh(){
             var sabor = document.getElementById("cake_option").value;
 
-            document.getElementById("text").innerHTML = "Oh, você gosta de " + sabor + "!";
+            document.getElementById("text").innerHTML = "Legal, você gosta de " + sabor + " :)";
         }
-         /*  Aqui eu utilizei o js para quando o usuario informar o sabor de bolo que gosta, aparecer 
-         uma frase reafirmando o sabor informado! */
+         /*  logo depois do usuario informar sua escolha aparece uma mensagem em seguida. */
 
 </script>
 </html>
